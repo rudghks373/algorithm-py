@@ -1,4 +1,3 @@
-```python
 class Solution:
     def wordPattern(self, pattern: str, s: str) -> bool:
         input = s.split()
@@ -15,5 +14,4 @@ class Solution:
         if  temp == pattern:
             return True
         else:
-            return False
-```            
+            return False          
