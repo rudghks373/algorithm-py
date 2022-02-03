@@ -1611,8 +1611,10 @@ print(result)
 ``` 
 
 # Counter
-파이썬 collections 라이브러리의 Counter는 등장 횟수를 세는 기능을 제공함
-리스트와 같은 반복 가능한(iterable) 객체가 주어졌을 때 내부의 원소가 몇 번씩 등장했는지를 알려줌
+- 파이썬 collections 라이브러리의 Counter는 등장 횟수를 세는 기능을 제공함
+- 리스트와 같은 반복 가능한(iterable) 객체가 주어졌을 때 내부의 원소가 몇 번씩 등장했는지를 알려줌
+```python
+
 from collections import Counter
 
 counter = Counter(['red', 'blue', 'red', 'green', 'blue', 'blue'])
@@ -1620,18 +1622,21 @@ counter = Counter(['red', 'blue', 'red', 'green', 'blue', 'blue'])
 print(counter['blue']) # 'blue'가 등장한 횟수 출력
 print(counter['green']) # 'green'이 등장한 횟수 출력
 print(dict(counter)) # 사전 자료형으로 반환
-실행 결과
+```
+## 실행 결과
 ```python
 3
 1
-```
 {'red': 2, 'blue': 3, 'green': 1}
-최대 공약수와 최소 공배수
-최대 공약수를 구해야 할 때는 math 라이브러리의 gcd() 함수를 이용할 수 있음
+```
+
+# 최대 공약수와 최소 공배수
+- 최대 공약수를 구해야 할 때는 math 라이브러리의 gcd() 함수를 이용할 수 있음
+```python
+
 import math
 
 # 최소 공배수(LCM)를 구하는 함수
-```python
 def lcm(a, b):
     return a * b // math.gcd(a, b)
 
