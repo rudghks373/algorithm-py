@@ -3,8 +3,7 @@
 
 > BFS 자료구조는 두 개의 큐를 활용하는데 반해, DFS 는 스택과 큐를 활용한다는 차이가 있음을 인지해야 함
 
-
-```phthon
+```python
 graph = dict()
 
 graph['A'] = ['B', 'C']
