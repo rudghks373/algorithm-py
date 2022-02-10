@@ -1,4 +1,4 @@
-### 그래프 예와 파이썬 표현
+### BFS 알고리즘 구현
 ![image](https://user-images.githubusercontent.com/32234263/153427513-5fff0fbd-cc18-4bbf-9217-71a4253585a2.png)
 
 > BFS 자료구조는 두 개의 큐를 활용하는데 반해, DFS 는 스택과 큐를 활용한다는 차이가 있음을 인지해야 함
