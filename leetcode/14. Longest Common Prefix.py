@@ -1,4 +1,3 @@
-```python
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         min_length = 200
@@ -11,10 +10,8 @@ class Solution:
             common_prefix += strs[0][i]
             i += 1
         return common_prefix
-```
 
-```python
-class Solution:
+class Solution2:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         result= []
         for x in zip(*strs):
@@ -23,4 +20,4 @@ class Solution:
          else:
             break
         return "".join(result)
-```
+
