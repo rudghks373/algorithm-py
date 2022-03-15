@@ -11,3 +11,17 @@ class Solution:
             else: 
                 end -= 1
         
+class Solution2:
+    def twoSum2(self, numbers: List[int], target: int) -> List[int]: 
+        for i in range(len(numbers)):
+            start = i+1
+            end = len(numbers)-1
+            temp = target - numbers[i]
+            while start <= end:
+                mid = start + (end - start)//2
+                if numbers[mid] == temp:
+                    return [i+1, mid+1]
+                elif numbers[mid] < temp:
+                    start = mid+1
+                else:
+                    end = mid-1
